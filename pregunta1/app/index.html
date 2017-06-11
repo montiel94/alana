@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+   <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body>
+<script src="js/app.js"></script>
+<script src="lib/jquery.js"></script>   
+<form id="loginform">
+<input type="text" class="input" id = "inicio" placeholder="Inicio" /> 
+<input type="text" class="input" placeholder="Fin" id = "fin"/>
+<input class="button" value="Calcular" onclick="ejercicio1()"/>
+    
+
+</form>
+<div class="container">
+  <h2 style="visibility:hidden;" id = "p1">Resumen</h2>
+    <div class="panel panel-default" style="visibility:hidden;" id = "panelresultado">
+    <div class="panel-body" id="resultado">
+    </div>
+</div>
+  <h2 style="visibility:hidden;" id = "p2">Resultados</h2>
+  <div class="panel panel-default" id="table-scroll" style="visibility:hidden;">
+    <div class="panel-body" id="table-wrapper">
+    <div class="table-responsive" >
+                <table class="table" id="myTable">
+                    <tr class="header">
+                        <th style="width:25%;">Numero</th>
+                        <th style="width:30%;">Divisores</th>
+                        <th style="width:35%;">Suma de dividores al cuadrado</th>
+                        <th style="width:30%;">Cuadrado perfecto</th>
+                    </tr>
+                    <tbody id = "tbody">
+                    </tbody>
+                </table>
+            </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
