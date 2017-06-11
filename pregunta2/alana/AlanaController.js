@@ -34,7 +34,7 @@ function AlanaController($scope,$rootScope,AlanaService)
                 console.log('se produjo un error en la consulta');
                 $rootScope.errorOcurrido = error;
             });
-        console.log('saliendo a la funcion getAllImages);
+        console.log('saliendo a la funcion getAllImages');
     }
     
 }
