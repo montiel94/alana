@@ -15,7 +15,7 @@ function AlanaController($scope,$rootScope,AlanaService)
 {
 
     /**
-     * Nombre:                  loadImages
+     * Nombre:                  getAllImages
      * Descripcion:             Metodo  que invoca llamado del metodo del service angular
      *                          Muestra mensaje en caso de error o almacena error en caso de fallo
      *
@@ -23,9 +23,9 @@ function AlanaController($scope,$rootScope,AlanaService)
      * @author montiedaniel
      * @since 09/06/2017
      */
-   function loadImages() {
-        console.log('entrando a la funcion loadImages');
-        AlanaService.getAllImages()(auth)
+   function getAllImages() {
+        console.log('entrando a la funcion getAllImages');
+        AlanaService.loadImages()(auth)
             .then(function(data){
                 console.log('se realizo consulta exitosamente');
                 alert('se llamo exitosamente al servidor');
@@ -34,7 +34,7 @@ function AlanaController($scope,$rootScope,AlanaService)
                 console.log('se produjo un error en la consulta');
                 $rootScope.errorOcurrido = error;
             });
-        console.log('saliendo a la funcion loadImages');
+        console.log('saliendo a la funcion getAllImages);
     }
     
 }

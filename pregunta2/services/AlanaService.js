@@ -12,10 +12,10 @@ angular.module('ServicesModule')
 
 function AlanaService($q,$http,$rootScope) {
 
-    this.getAllImages = getAllImages;
+    this.loadImagess = loadImages;
     
     /**
-     * Nombre:                  getAllImages
+     * Nombre:                  loadImages
      * Descripcion:             Metodo  que llama a metodo del servidor para consultar todas las imagenes
      *
      * @version 1.0
@@ -23,8 +23,8 @@ function AlanaService($q,$http,$rootScope) {
      * @since 09/06/2017
      */
     
-    function getAllImages() {
-        console.log('entrando a la funcion getAllImages');
+    function loadImages() {
+        console.log('entrando a la funcion loadImages');
         var defered = $q.defer();
         var promise = defered.promise;
         $http
@@ -45,6 +45,6 @@ function AlanaService($q,$http,$rootScope) {
             defered.reject(error.mensaje);
         });
         return promise;
-        console.log('entrando a la funcion getAllImages');
+        console.log('entrando a la funcion loadImages');
     }
 }
